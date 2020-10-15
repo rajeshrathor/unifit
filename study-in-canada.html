@@ -31,6 +31,7 @@
     <link href="assets/css/switcher-style.css" rel="stylesheet" />
     <link href="assets/css/style.css" rel="stylesheet" />
     <link href="assets/css/responsive.css" rel="stylesheet" />
+
 </head>
 
 <!-- page wrapper -->
@@ -613,6 +614,12 @@
             </div>
         </section>
 
+        <span id="dots">...</span>
+
+
+
+
+
         <section class="about-style-two">
             <div class="auto-container">
                 <div class="row clearfix">
@@ -629,12 +636,42 @@
                                     </div>
                                 </div>
                                 <div class="text">
-                                    <p>The multicultural environment, affordable high-quality education, stable economy, and openness to immigration, makes Canada an ideal country for international students for both graduates and postgraduate studies in cities like Toronto, Vancouver, Waterloo, Ottawa, and Montreal. With one of the longest coastlines, vast forest land, world-class cities, and a culture of tolerance and diversity, Canada is a natural destination for thousands of international students. </p>
-                                    <p>
-                                       Canada welcomes over 500,000 international higher education students each year. Canada is one of the best international education destinations and is also recognized as one with the safest study environment offering high quality of life and education. 
-                                    </p>
-									<p>An international student pursuing a full-time post-secondary school program in Canada and has a valid study permit is allowed to work on-campus. For students that want to work part-time off-campus need to be full-time students at a designated learning institution (DLI). The study program should be for a duration of at least 6 months and should lead to a degree, diploma or certificate.</p>
-									<p>During the academic session, the international students can work in Canada up to 20 hours a week and during vacations they can work up to 40 hours a week. A lot of students take part-time jobs to cover their living costs and if not full, some portion of their tuition fees. Several programs may even have a paid co-op term, where one gets hands on experience while working in the industry. Further, on the completion of their program, students can work up to 3 years depending on the length of their study program. </p>
+                                    <p>The multicultural environment, affordable high-quality education, stable economy,
+                                        and openness to immigration, makes Canada an ideal country for international
+                                        students for both graduates and postgraduate studies in cities like Toronto,
+                                        Vancouver, Waterloo, Ottawa, and Montreal. With one of the longest coastlines,
+                                        vast forest land, world-class cities, and a culture of tolerance and diversity,
+                                        Canada is a natural destination for thousands of international students. Canada welcomes over 500,000 international higher education
+                                        students each year.
+                                        Canada is one of the best international education destinations and is also
+                                        recognized as one with the safest study environment offering high quality of
+                                        life and education.  <span
+                                            id="more"><br>
+                                            An international student pursuing a full-time post-secondary school program
+                                            in
+                                            Canada and has a valid study permit is allowed to work on-campus. For
+                                            students
+                                            that want to work part-time off-campus need to be full-time students at a
+                                            designated learning institution (DLI). The study program should be for a
+                                            duration of at least 6 months and should lead to a degree, diploma or
+                                            certificate. <br>
+                                            During the academic session, the international students can work in Canada
+                                            up to
+                                            20 hours a week and during vacations they can work up to 40 hours a week. A
+                                            lot
+                                            of students take part-time jobs to cover their living costs and if not full,
+                                            some portion of their tuition fees. Several programs may even have a paid
+                                            co-op
+                                            term, where one gets hands on experience while working in the industry.
+                                            Further,
+                                            on the completion of their program, students can work up to 3 years
+                                            depending on
+                                            the length of their study program.
+                                        </span></p>
+
+                                    <button onclick="myFunction()" id="myBtn">Read more</button>
+
+
                                 </div>
                             </div>
                         </div>
@@ -651,7 +688,7 @@
             </div>
         </section>
 
-        <section class="feature-style-two sidebar-page-container" style="margin-top: -150px;">
+        <section class="feature-style-two sidebar-page-container" style="margin-top: -100px;">
             <div class="auto-container">
                 <div class="row clearfix">
                     <div class="col-lg-4 col-md-6 col-sm-12 feature-block">
@@ -1334,6 +1371,24 @@
 
 
     <script src="assets/js/script.js"></script>
+
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
 </body>
 
 </html>

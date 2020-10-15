@@ -6721,3 +6721,7 @@ table.GeneratedTable thead {
 .header_back_color_white {
   background-color: #fff;
 }
+
+#more {
+  display: none;
+}
